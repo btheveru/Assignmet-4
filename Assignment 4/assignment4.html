@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CE Course Evaluation Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="https://www.centennialcollege.ca/">
+            <img src="logo.jpeg" alt="Centennial College Logo">
+        </a>
+    </header>
+    <main>
+        <h1>CE Course Evaluation Form</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Course Information</legend>
+                <label for="course_name">Course Name:</label>
+                <input type="text" id="course_name" name="course_name" required><br>
+                <label for="course_code">Course Code:</label>
+                <input type="text" id="course_code" name="course_code" required><br>
+            </fieldset>
+            <fieldset>
+                <legend>Instructor Information</legend>
+                <label for="instructor_name">Instructor Name:</label>
+                <input type="text" id="instructor_name" name="instructor_name" required><br>
+                <label for="instructor_email">Instructor Email:</label>
+                <input type="email" id="instructor_email" name="instructor_email" required><br>
+            </fieldset>
+            <fieldset>
+                <legend>Evaluation</legend>
+                <label for="rating">Overall Rating (1-5):</label>
+                <input type="number" id="rating" name="rating" min="1" max="5" required><br>
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="4" cols="50" required></textarea><br>
+            </fieldset>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <p>For assistance, contact <a href="mailto:ce@centennialcollege.ca">ce@centennialcollege.ca</a></p>
+    </footer>
+</body>
+</html>
